@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <form>
+        <label for="nombre">Ingrese su nombre:</label>
+        <input 
+            type="text" 
+            minlength="5" 
+            maxlength="10" 
+            placeholder="Joe Doe" 
+            id="nombre" 
+            value="pepe"
+            name="nombre"
+        >
+
+        <label for="password">Ingrese su contraseña:</label>
+        <input type="password" id="password" name="password">
+        <button type="button">Generar contraseña</button>
+        <button type="button">Validar si es segura</button>
+        <input type="number" min="1" max="10">
+        <input type="email" required>
+        <input type="file">
+        
+        <input type="date">
+        <input type="datetime-local">
+
+        <label for="mensaje">Ingrese un mensaje:</label>
+        <textarea 
+            id="mensaje" 
+            maxlength="100" 
+            minlength="4" 
+            required 
+            placeholder="Escribe el mensaje aqui..."
+            name="mensaje"
+        ></textarea>
+        <br>
+        <span>Selecciona tu lenguaje preferido?</span>
+        <br>
+        <label for="html">HTML</label>  
+        <input type="radio" id="html" name="seleccionar-lenguaje">
+        <br>
+        <label for="css">CSS</label>
+        <input type="radio" id="css" name="seleccionar-lenguaje">
+        <br>
+        <label for="javascript">Javascript</label>
+        <input type="radio" id="javascript" name="seleccionar-lenguaje">
+        <br>
+
+
+        <span>Selecciona tus lenguajes conocidos?</span>
+        <br>
+        <label for="html-conocido">HTML</label>  
+        <input type="checkbox" id="html-conocido" name="lenguaje-conocido" value="html">
+        <br>
+        <label for="css-conocido">CSS</label>  
+        <input type="checkbox" id="css-conocido" name="lenguaje-conocido" value="css">
+        <br>
+        <label for="javascript-conocido">Javascript</label>  
+        <input type="checkbox" id="javascript-conocido" name="lenguaje-conocido" value="javascript">
+        <br>
+        
+        <label for="pais">Seleccionar un pais</label>
+        <select name="pais" id="pais">
+            <option value="AR">Argentina</option>
+            <option value="FR">Fracia</option>
+            <option value="BR" >Brasil</option>
+            <option value="NULO" selected disabled>No seleccionado</option>
+
+        </select>
+
+        <input type="submit" value="Iniciar Sesion" >
+        <button type="submit" title="boton de registro">Registrar</button>
+        <button type="button" >Iniciar sesion con google</button>
+    </form>
+</body>
+</html>
