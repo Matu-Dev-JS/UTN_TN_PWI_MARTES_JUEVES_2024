@@ -1,0 +1,130 @@
+/* Le indico al navegador el texto dentro de esta etiqueta debe ser interpretado como Hoja de Estilos o (css) */
+
+/* SELECTOR UNIVERSAL */
+/* * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: aqua;
+} */
+
+
+/* Selectores */
+
+/* SELECTOR DE ID */
+/* #titulo-super-especial {
+    color: yellow
+} */
+
+
+/* SELECTOR DE CLASE */
+/* .titulo-especial {
+    color: red;
+    font-size: 50px;
+}
+ */
+
+/* SELECTOR DE ELEMENTOS */
+/* Tanto el h1 como el h2 tendran estos estilos */
+/* h1,
+h2 {
+    color: blueviolet !important;
+    background-color: black;
+    font-size: 80px;
+}
+
+
+
+
+.subrayado {
+    text-decoration: 1px solid underline rgb(64, 255, 0);
+}
+
+#placa {
+    color: brown;
+} */
+
+
+
+
+/* PROPIEDADES */
+
+h2{
+    color: gray;
+    font-size: 24px;
+    letter-spacing: 1px;/* Espaciado de letras */
+    word-spacing: 2px;
+    /* text-decoration: rgb(0, 21, 255) 1px dotted overline line-through underline ; */
+    /*
+    4 valores 😫: 
+        color, 
+        tamaño: unidad de medida, 
+        tipo: solid, wavy, dashed, dotted, double, 
+        ubicacion: overline, line-theough, underline
+    Si pones none, matas el estilo (osea ya no funcionaria)
+    */
+    text-align: center;
+    /* text-shadow: 
+    2px -2px 2px rgb(207, 201, 201), 
+    2px 20px 2px rgb(210, 87, 87)
+    ; */
+   /*  text-shadow: 
+    2px -2px 2px rgb(226, 168, 255), 
+    -2px 2px 2px rgb(123, 53, 228),
+    -4px 4px 2px rgb(66, 144, 209)
+    ;  */
+    background-color: black;
+    color: rgb(51, 106, 255);
+    text-shadow: 0px 0px 3px rgb(97, 138, 252) ;
+    /* 
+    text-shadow: 
+    x
+    y
+    difuminado/blur
+    color
+    */
+}
+
+p{
+    line-height: 40px;/* Espaciado entre lineas */
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    box-shadow: 
+    1px 1px 2px 1px rgb(169, 169, 169),
+    inset 0 0 3px rgb(119, 119, 119)
+    ;
+}
+
+.tachado{
+    text-decoration: 1px red solid line-through;
+}
+
+
+
+
+
+
+/* 
+propiedades de texto
+propiedades de background
+propiedades de border
+propiedades de box
+
+Nos permiten posicionar elementos:
+-float (ya no se usa)
+-flexbox (SUPER IMPORTANTE )
+-grid
+-position
+
+Diseño responsivo:
+Mediaquerys
+
+Animaciones y transiciones 
+@keyframes
+*/
