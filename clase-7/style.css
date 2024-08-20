@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family:  "Poppins", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    color: rgb(211, 211, 211);
+    font-size: 50px;
+    text-align: center;
+
+    font-family: "Jersey 10", sans-serif;
+}
+
+h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+
+
+p{
+    color: rgb(174, 173, 173);
+    text-align: justify;
+}
+
+.tachado-rojo{
+    color: red;
+    text-decoration:rgb(201, 0, 0) 1px solid line-through;
+    font-size: 18px;
+}
+
+.sombra-texto-gris{
+    text-shadow:2px 2px 0px rgb(109, 109, 109) ;
+}
+
+
+
+a{
+    color: rgb(255, 255, 36);
+    text-decoration: none;
+    text-shadow:0px 0px 3px rgb(255, 242, 0);
+    font-size: 18px;
+
+}
+
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+div{
+    background-color: red ;
+    width: 200px;
+    height: 200px;
+}
+
+div{
+    background-color: rgba(0, 255, 255, 0.489);
+}
+
+
+.caja h2{
+    font-size: 18px;
+    color: red;
+
+}
+
+.caja .btn-buy{
+    background-color: red;
+}
+
+.btn-buy{
+    background-color: chartreuse;
+}
+
