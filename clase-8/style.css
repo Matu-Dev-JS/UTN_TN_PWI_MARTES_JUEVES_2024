@@ -1,0 +1,67 @@
+
+/* normalizar el estilo */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: green;
+}
+
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    justify-content: center;
+    padding: 20px 40px;
+    align-items: flex-start;
+    background-color: blue;
+    height: 100vh; /* Viewport height */
+}
+
+
+.hijo{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px; */
+    /* border-radius: 10px 50px 10px 50px; */
+}
+
+.padre-2{
+    background-color: red;
+}
+
+
+header{
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+header .logo-container{
+    display: flex;
+    gap: 20px;
+}
+header nav{
+    display: flex;
+    gap: 20px;
+}
+
+header nav a{
+    text-decoration: none;
+}
