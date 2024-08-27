@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Assistant", sans-serif;
+    font-size: 9px;
+}
+
+
+/* CODIGO CSS DE SIDEBAR */
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: flex-start;
+    padding: 8px;
+    align-items: flex-start;
+    background-color: white;
+    font-size: 10px;
+    color: rgb(34, 33, 33);
+    width: 300px;
+    box-shadow: 0 0 10px rgba(39, 39, 39, 0.188);
+    border-radius: 12px;
+}
+.sidebar-option{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.sidebar-option-highlighted{
+    color: #6965db;
+}
+
+.sidebar-option-highlighted 
+.sidebar-option-name 
+.sidebar-option-name-text{
+    color: #6965db;
+    font-weight: 700;
+}
+
+.sidebar-option-highlighted 
+.sidebar-option-name 
+svg path{
+    color: #6965db;
+    stroke-width: 2px;
+}
+
+.sidebar-option-highlighted 
+.sidebar-option-shortcut{
+    color: #b6b4ed;
+}
+
+/* :hover hace referencia a cuando tenga el cursor encima de un elemento */
+.sidebar-option:hover{
+    background-color: rgb(241, 240, 255);
+}
+
+.sidebar-option-name{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+.sidebar-option-name-text{
+    border: none;
+    font-size: 14px;
+}
+
+.sidebar-option .sidebar-option-name svg{
+    width: 14px;
+
+}
+.sidebar-option .sidebar-option-name svg path{
+    width: 14px;
+
+}
+
+.sidebar-option-shortcut{
+    color: rgb(182, 177, 177);
+    font-size: 14px;
+}
+/* 
+.padre-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(34, 33, 33);
+}
+.padre-2 svg{
+    transform: scale(0.8);
+    margin-right: 5px;
+} */
+/* .guardar{
+    border: none;
+    font-size: 9px;
+    background-color: white;
+}
+.padre-3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(34, 33, 33);
+}
+.span1{
+    margin-left: 50px;
+    color: rgb(182, 177, 177);
+}
+.exportar{
+    border: none;
+    font-size: 9px;
+    background-color: white;
+}
+.padre-3 svg{
+    transform: scale(0.8);
+    margin-right: 5px;
+}
+.padre-4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(34, 33, 33);
+}
+.colaborar{
+    border: none;
+    font-size: 9px;
+    background-color: white;
+}
+.padre-4 svg{
+    transform: scale(0.8);
+    margin-right: 5px;
+}
+.padre-5{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+}
+.command{
+    border: none;
+    font-size: 9px;
+    background-color: white;
+    color: rgb(131, 131, 214);
+    font-weight: 700;
+}
+.padre-5 svg{
+    transform: scale(0.8);
+    margin-right:5px;
+    color: rgb(131, 131, 214);
+}
+.span2{
+    margin-left: 70px;
+    color: rgb(182, 177, 177);
+}
+.padre-6{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.span3{
+    margin-left: 140px;
+    color: rgb(182, 177, 177);
+}
+.Ayuda{
+    border: none;
+    font-size: 9px;
+    background-color: white;
+}
+.padre-6 svg{
+    transform: scale(0.8);
+    margin-right: 5px;
+}
+.padre-7{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.limpiar{
+    border: none;
+    font-size: 9px;
+    background-color: white;
+}
+.padre-7 svg{
+    transform: scale(0.8);
+    margin-right: 5px;
+} */
