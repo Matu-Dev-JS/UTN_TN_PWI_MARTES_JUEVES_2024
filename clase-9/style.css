@@ -1,0 +1,132 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.padre{
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100vw;/* viewport width */
+    height: 100vh;/* viewport height */
+    margin-top: 100vh ;
+    position: relative;
+}
+
+.hijo{
+    background-color: blueviolet;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.hijo:nth-child(1){
+    background-color: aqua;
+}
+
+.hijo:nth-child(2){
+    background-color: rgb(255, 247, 0);
+    position: absolute;
+    top: 80px;
+    left: 190px;
+}
+
+
+/* .hijo:nth-child(2){
+    background-color: rgb(255, 247, 0);
+    position: relative;
+    TOP Y LEFT SON PRIORITARIOS
+    left: 60px;
+    top: 40px;
+    bottom: 40px;
+    right: 60px;
+    
+    top
+    bottom
+    left 
+    right
+   
+} */
+
+.hijo:nth-child(3){
+    background-color: rgb(255, 0, 0);
+}
+
+/* .hijo:last-child{
+    background-color: aquamarine;
+} */
+
+/* .hijo:first-child{
+    background-color: aqua;
+} */
+
+/* Nros impares 
+.hijo:nth-child(odd){
+    background-color: aqua;
+} */
+/* Nros pares
+.hijo:nth-child(even){
+    background-color: aqua;
+}  */
+
+.botonera{
+    width: 100vw;
+    height: 100px;
+    
+}
+
+.icon-exalidraw{
+    background-color: transparent;
+    border: none;
+}
+.icon-exalidraw .bi-airplane{
+    font-size: 24px;
+    z-index: 2;
+    position: relative;
+}
+
+
+.icon-exalidraw span{
+    border-radius: 5px;
+    padding: 2px 4px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 12px;
+    position: relative;
+    right: 12px;
+    top: 7px;
+    z-index: 3;
+}
+
+.input-container{
+    position: relative;
+    width: 300px;
+    display: flex;
+    align-items: center;
+
+}
+
+.input-container input{
+    width: 100%;
+    padding: 10px;
+}
+
+
+.btn-input{
+    position: absolute;
+    /* top: 10px; */
+    right: 0;
+    border: none;
+    background-color: transparent;
+    border-left: 1px solid gray;
+    padding: 0 8px;
+    cursor: pointer;
+}
