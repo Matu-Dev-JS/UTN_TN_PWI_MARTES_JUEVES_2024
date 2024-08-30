@@ -1,0 +1,20 @@
+main{
+    height: 400vh;
+    background-color: bisque;
+    margin-top: 120px;
+    padding: 40px 20px;
+}
+
+
+.img-container{
+    height: 1200px;
+    width: 400px;
+    background-color: white;
+}
+
+.img-container img{
+    width: 200px;
+    position: sticky;
+    top: 140px;
+    z-index: 2;
+}

@@ -1,0 +1,24 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('./normalize.css');
+@import url('./header.css');
+@import url('./main.css');
+
+
+
+:root{
+    --color-primario: #ffe500;
+    --color-texto: rgba(0,0,0,.8980392157);
+    --shadow-1: 0 0 3px rgba(0, 0, 0, 0.416);
+    --w-normal: 250px;
+    --border-extra-light: 1px solid #e6e6e6;
+    --color-icon-gray: #666;
+}
+
+/* .padre{
+    background-color: #ffe500;
+}
+ */
+ 
+.icon-normal {
+    color: var(--color-icon-gray);
+}
