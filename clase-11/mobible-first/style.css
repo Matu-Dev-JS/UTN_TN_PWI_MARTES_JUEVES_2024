@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root{
+    --primary-color: rgb(103, 61, 227);
+    --primary-color-dark: rgb(48, 28, 107);
+    --primary-color-darker: rgb(30, 19, 69);
+    --text-color-light: rgb(255, 255, 255);
+    --text-font-family:  "DM Sans", sans-serif;
+    --secondary-color: rgb(252, 81, 132);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-font-family);
+}
+
+.text{
+    text-align: justify;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text-aling-left{
+    text-align: left;
+}
+
+
+.section {
+    padding: 32px 16px;
+}
+
+.section-gap-normal{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.section-darker{
+    background-color: var(--primary-color-darker);
+    color: var(--text-color-light);
+}
+
+
+.cards-article-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card-article{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 18px;
+    padding: 16px;
+}
+
+.card-article-dark{
+    background-color: var(--primary-color-dark);
+    color: var(--text-color-light);
+}
+
+.card-article-icon{
+    background-color: var(--primary-color);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.button-primary{
+    padding: 12px 48px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.secondary-bg{
+    background-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 900px) {
+    .cards-article-container{
+        flex-direction: row;
+    }
+}
