@@ -85,3 +85,11 @@ console.log(Number(null))
 console.log( 'Hola' )
 
 
+/* 
+Operadores aritmeticos
+Comparadores
+Operadores Logicos
+Variables
+Condiciones
+*/
+
