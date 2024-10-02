@@ -96,5 +96,5 @@ console.log('Mi string tiene ' + string.length)
 
 //console.log(string.repeat(3))
 
-let rating = 3
-console.log('⭐'.repeat(rating))
+//let rating = 3
+//console.log('⭐'.repeat(rating))
