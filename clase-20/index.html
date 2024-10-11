@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .modal-container{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.492);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+
+        .modal{
+            width: 600px;
+            height: 400px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: white;
+        }
+        .modal-header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn-close{
+            background-color: transparent;
+            border: none;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal-container hidden">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="title">Modal title</h2>
+                <button class="btn-close">X</button>
+            </div>
+        </div>
+    </div>
+    <button id="btn-register">Registro</button>
+
+    <input type="password" class="input">
+    <button class="btn-ver">Ver</button>
+
+    <form id="formulario">
+        <div>
+            <label for="nombre">Ingrese un nombre:</label>
+            <input 
+                type="text" 
+                placeholder="Escriba el nombre" 
+                id="nombre"
+                name="nombre"
+            >
+        </div>
+        <input type="submit"/>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
