@@ -57,7 +57,9 @@ const formularioHTML = document.getElementById('formulario')
 
 function enviarFormulario(evento){
     evento.preventDefault()
+    //El formulario de donde se origino el evento
     const formulario = evento.target
+    
     console.log(formulario.nombre.value)
     //LOS FORMULARIOS POR DEFECTO RECARGAN LA PAGINA
     console.log('se envio el formulario')
