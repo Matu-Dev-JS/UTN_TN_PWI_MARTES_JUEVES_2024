@@ -4,7 +4,7 @@ import './global.css'
 
 function App() {
 
-	
+
 
 	function saludarPersona({ nombre, edad }) {
 
@@ -100,8 +100,88 @@ function App() {
 		}
 	]
 
+
+	const contactos = [
+		{
+			nombre: 'Emanuel Carreira',
+			avatar: 'https://ca.slack-edge.com/T07EJ2FLZ2R-U07F5J8NGCR-ec3380dac16d-192',
+			status: 'en_linea'
+		},
+		{
+			nombre: 'Fede Rabbia',
+			avatar: 'https://ca.slack-edge.com/T07EJ2FLZ2R-U07ESU2R35Y-e7a6bc16ffb4-192',
+			status: 'en_linea'
+		},
+		{
+			nombre: 'Gaston Ferrari',
+			avatar: 'https://ca.slack-edge.com/T07EJ2FLZ2R-U07EVCX98H2-7b2952b1bb15-192',
+			status: 'desconectado'
+		},
+		{
+			nombre: 'Leandro Bolletta',
+			avatar: 'https://ca.slack-edge.com/T07EJ2FLZ2R-U07EQ3ET7RB-ffafbbc87ff9-192',
+			status: 'desconectado'
+		},
+		{
+			nombre: 'Lio Silman',
+			avatar: 'https://ca.slack-edge.com/T07EJ2FLZ2R-U07ESQTRNJF-20622c72af58-192',
+			status: 'en_linea'
+		},
+		{
+			nombre: 'Lucas Legor',
+			avatar: 'https://ca.slack-edge.com/T07EJ2FLZ2R-U07F5J8DSQH-773273a440d1-192',
+			status: 'desconectado'
+		},
+		{
+			nombre: 'Luciano Leone',
+			avatar: 'https://ca.slack-edge.com/T07EJ2FLZ2R-U07FFMZ9CM6-98d9c3a92a85-192',
+			status: 'en_linea'
+		},
+		{
+			nombre: 'Matias Gimenez',
+			avatar: 'https://ca.slack-edge.com/T07EJ2FLZ2R-U07F9NRCBC0-5cfe19a6f509-192',
+			status: 'en_linea'
+		},
+		{
+			nombre: 'Rodrigo Nicolas Bernardez',
+			avatar: 'https://ca.slack-edge.com/T07EJ2FLZ2R-U07F5J8NGCR-ec3380dac16d-192',
+			status: 'en_linea'
+		},
+		{
+			nombre: 'Tomas Martinez',
+			avatar: 'https://ca.slack-edge.com/T07EJ2FLZ2R-U07F5J8SBJM-45507abb443f-192',
+			status: 'desconectado'
+		},
+		{
+			nombre: 'Gaston Nocquet',
+			avatar: 'https://ca.slack-edge.com/T07EJ2FLZ2R-U07ELATQ5DL-g4b35bd68d0e-72',
+			status: 'en_linea'
+		}
+	]
+	const contactosJSXList = contactos.map(
+		(contacto) => {
+			return (
+				<div className='contacto'>
+					<div className='avatarStatus'>
+						<img src={contacto.avatar} alt="avatar" />
+						{
+							contacto.status == 'en_linea'
+								? <div className='enLinea'></div>
+								: <div className='desconectado'></div>
+						}
+						{/* <div className={`status ${contacto.status}`}></div> */}
+
+					</div>
+
+					<span className='nombreContacto'>{contacto.nombre}</span>
+
+				</div>
+			)
+		}
+	)
+
 	const workspacesJSXList = workspaces.map(
-		(workspace) =>{
+		(workspace) => {
 			return (
 				<div>
 					<img src={workspace.logo} />
@@ -119,10 +199,10 @@ function App() {
 	//lo que devuelva mi callback se guardara como elemento del array resultante
 
 	//Transformar este array en [{dia: 'lunes', letras: 5}, {dia: 'martes', letras: 6}, {dia: 'miercoles', letras: 9}]
-	const dias = ['lunes', 'martes', 'miercoles'] 
+	const dias = ['lunes', 'martes', 'miercoles']
 	const diasDetalle = dias.map(
 		(dia) => {
-			return {dia: dia, letras: dia.length}
+			return { dia: dia, letras: dia.length }
 		}
 	)
 	console.log(diasDetalle)
@@ -157,7 +237,9 @@ function App() {
 				numero_tarjeta={'123213 213 13213 213'}
 				nombre={'Matias'}
 			/>
-
+			<div className='container'>
+				{contactosJSXList}
+			</div>
 		</div>
 	)
 }

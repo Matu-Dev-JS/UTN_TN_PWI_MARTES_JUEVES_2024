@@ -1,3 +1,81 @@
 .navbar{
     margin-top: 50px;
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #F7DCE4;
+}
+
+.avatarStatus {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 20px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.container {
+    width: 400px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #2C0D13;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 4px 10px;
+    align-items: center;
+    justify-content: left;
+}
+
+.contacto:hover {
+    background-color: #3d1c24;
+    border-radius: 5px;
+}
+
+.statusContainer {
+    width: 20px;
+    height: auto;
+    border-radius: 1px;
+}
+
+.enLinea {
+    background-color: green;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #3d1c24; 
+    position: relative;
+    left: -6px;
+    top: 10px;
+    z-index: 1000;
+}
+
+.desconectado {
+    background-color: rgb(83, 83, 83);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #3d1c24; 
+    position: relative;
+    left: -6px;
+    top: 10px;
+    z-index: 1000;
+}
+
+.nombreContacto {
+    padding-left: 9px;
+}
