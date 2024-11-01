@@ -1,5 +1,6 @@
 import React from "react";
 import { WorkspaceList } from "../Components";
+import { Link } from "react-router-dom";
 
 
 const HomeScreen = () => {
@@ -25,6 +26,8 @@ const HomeScreen = () => {
 	]
     return (
         <div>
+			{/* Hace lo mismo que el <a></a> */}
+			<Link to={'/estados'}>Ir a estados</Link>
             <WorkspaceList workspaces={workspaces}/>
         </div>
     )
