@@ -28,6 +28,8 @@ const HomeScreen = () => {
         <div>
 			{/* Hace lo mismo que el <a></a> */}
 			<Link to={'/estados'}>Ir a estados</Link>
+			<br/>
+			<Link to={'/formularios'}>Ir a formularios</Link>
             <WorkspaceList workspaces={workspaces}/>
         </div>
     )

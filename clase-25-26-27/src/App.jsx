@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import HomeScreen from './Screens/HomeScreen'
 import WorkspaceScreen from './Screens/WorkspaceScreen'
 import EstadosScreen from './Screens/EstadosScreen'
+import FomulariosScreen from './Screens/FomulariosScreen'
 
 
 /* 
@@ -26,6 +27,10 @@ function App() {
 				<Route 
 					path='/estados' 
 					element={<EstadosScreen/>}
+				/>
+				<Route 
+					path='/formularios' 
+					element={<FomulariosScreen/>}
 				/>
 			</Routes>
 		</div>
