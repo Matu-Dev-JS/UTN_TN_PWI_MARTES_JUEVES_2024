@@ -11,6 +11,8 @@ const FomulariosScreen = () => {
     //Creamos un estado de usuarios, empieza como array vacio
     const [usuarios, setUsuarios] = useState([])
 
+
+    //Estado de errores, que hace? 
     const [errors, setErrors] = useState({nombre: null, contrasenia: null})
 
     //Pregunta tecnica: Si yo hago un push (osea agrego un elemento al array) que pasara? Se imprime en pantalla
@@ -28,31 +30,34 @@ const FomulariosScreen = () => {
 
         const nuevo_usuario = extractFormData(form_jsx) //{nombre, contrasenia}
 
+        const errores_formulario = {nombre: null, contrasenia: null}
         let hayErrores = false
 
         if(!nuevo_usuario.nombre){
-            setErrors(( prevStateErrors )=> {
-                return {...prevStateErrors, nombre: 'Falta un nombre'}
-            })
+            errores_formulario.nombre = 'Falta un nombre'
             hayErrores = true
         }
         if(!nuevo_usuario.contrasenia){
-            setErrors((prevStateErrors) => {
-                return {...prevStateErrors, contrasenia: 'Falta una contrasenia'}
-            })
+            errores_formulario.contrasenia = 'Falta una contrasenia'
             hayErrores = true
         }
+        //Setteamos que los errores se guarden en el estado de errores
+        setErrors(errores_formulario)
 
 
         if(!hayErrores){
-            setErrors({nombre: null, contrasenia: null})
+            
             nuevo_usuario.hora_creacion = getFormattedDateMMHHDDMM()
 
             //Agregar a mi estado el nuevo usuario
             //Esto esta MAL 🤮: usuarios.push(nuevo_usuario)
     
             //Esto es mejor ⭐🤓
-            setUsuarios([...usuarios, nuevo_usuario])
+            setUsuarios(
+                (prevUsuariosState) => {
+                    return [...prevUsuariosState, nuevo_usuario]
+                }
+            )
         
             console.log('formulario enviado')
         }

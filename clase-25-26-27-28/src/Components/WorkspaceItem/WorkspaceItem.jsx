@@ -1,6 +1,9 @@
 import React from 'react'
 import './WorkspaceItem.css'
+import { Link } from 'react-router-dom'
 
+
+//El key es una propiedad reservada, NO podemos obtenerla
 const WorkspaceItem = ({img, title, miembros, id}) => {
 
     return (
@@ -8,9 +11,9 @@ const WorkspaceItem = ({img, title, miembros, id}) => {
             <img src={img}/>
             <h2>{title}</h2>
             <span>Hay {miembros.length} miembros</span>
-            <a href={`/workspace/` + id}>Ir al espacio</a>
+            <Link to={'/workspace/' + id}>Ir a el espacio de trabajo</Link>
         </div>
     )
 }
-
+//SPA single page application
 export default WorkspaceItem

@@ -22,17 +22,35 @@ const EstadosScreen = () => {
     //La funcion de setting hara que mi componente vuelva a cargarse
     
     //Esto es un array 
-    let [contador, setContador] = useState(1)
+    const [contador, setContador] = useState(1)
 
 
+
+    //La funcion setter puede recibir una callback
+    //El valor de retorno de la callback es el valor que tendra mi estado
+    //La callback recibira un parametro con el valor del estado previo
 
     const incrementar = () => {
+        //contador 1
         //Llamo a la funcion de setting
-        setContador(contador + 1)
+        setContador(
+            (prevContadorState) => {
+                return prevContadorState + 1
+            }
+        )
     }
-
-    const decrementar = () => {
-        setContador( contador - 1 ) 
+    const [errorMinValue, setErrorMinValue] = useState(false)
+    const decrementar = () =>{
+        if (contador > 1){
+            setContador (
+                (prevState) =>{
+                    return prevState - 1
+                }
+            )
+        }else{       
+            //Usamos la callback o no?
+            setErrorMinValue(true)
+        }
     }
     /* 
     PROBLEMA:
@@ -43,7 +61,12 @@ const EstadosScreen = () => {
     */
 
     const handleShowHiddenText = () =>{
-        setIsHiddenText(!isHiddenText)
+        //Es necesario pasar una callback? Si conviene
+        setIsHiddenText(
+            (prevTextIsHiddenState) => {
+                return !prevTextIsHiddenState
+            }
+        )
     }
     //state isHiddenText : boolean (default true)
     const [isHiddenText, setIsHiddenText] = useState(false)
@@ -56,6 +79,8 @@ const EstadosScreen = () => {
                 <button onClick={decrementar}>Restar</button>
                 <span>{contador}</span>
                 <button onClick={incrementar}>Sumar</button>
+
+                {errorMinValue &&<span>Error, el contador no puede ser menor a 1</span>}
             </div>
 
             <button onClick={handleShowHiddenText}>Abrir</button>

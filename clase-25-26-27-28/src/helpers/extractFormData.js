@@ -20,3 +20,4 @@ const extractFormData = (form_jsx) => {
 }
 
 export default extractFormData
+
